@@ -188,7 +188,7 @@ export function AppearanceMenu() {
 
                         <Seg label="Content Layout" value={a.contentLayout} onChange={v => set({ contentLayout: v })}  options={[["contained", "Contained"], ["full", "Full"]]} />
 
-                        <Seg label="Content Width" value={a.contentWidth} onChange={v => set({ contentWidth: v })} options={[["1280px", "1280"], ["1440px", "1440"], ["1600px", "1600"], ["full", "Full"]]} />
+                        <Seg label="Content Width" value={a.contentWidth} onChange={v => set({ contentWidth: v })} options={[["1280px", "1280"], ["1440px", "1440"], ["full", "Full"]]} />
 
                         <Seg label="Density" value={a.density} onChange={v => set({ density: v })} options={[["compact", "Compact"], ["default", "Default"], ["comfortable", "Comfy"]]} />
 

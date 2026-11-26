@@ -3,8 +3,8 @@
 import {
     ChevronsUpDown,
     LogOut,
-    Settings,
-    UserRound,
+    Settings, Sparkles,
+    UserRound, UserRoundGroup,
 } from "lucide-react"
 
 import {
@@ -56,7 +56,7 @@ export function SidebarUserMenu() {
                 </DropdownMenuTrigger>
 
                 <DropdownMenuContent
-                    className="w-56"
+                    className="w-56 text-muted-foreground"
                     side="top"
                     align="end"
                     sideOffset={8}
@@ -86,14 +86,28 @@ export function SidebarUserMenu() {
                         <DropdownMenuSeparator />
 
                         <DropdownMenuItem>
-                            <UserRound />
-                            Profile
+                            <Sparkles />
+                            Upgrade to Pro
                         </DropdownMenuItem>
 
-                        <DropdownMenuItem>
-                            <Settings />
-                            Account Settings
-                        </DropdownMenuItem>
+                        <DropdownMenuSeparator />
+
+                        <DropdownMenuGroup>
+                            <DropdownMenuItem>
+                                <UserRound />
+                                Profile
+                            </DropdownMenuItem>
+
+                            <DropdownMenuItem>
+                                <Settings />
+                                Account Settings
+                            </DropdownMenuItem>
+
+                            <DropdownMenuItem>
+                                <UserRoundGroup />
+                                Organisation Management
+                            </DropdownMenuItem>
+                        </DropdownMenuGroup>
                     </DropdownMenuGroup>
 
                     <DropdownMenuSeparator />
